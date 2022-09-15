@@ -12,13 +12,13 @@ import com.lampa.in_app_review.R
 
 public class RatingManager(
     private val appContext: Context,
-    private val sharPref: SharePreferencesManager,
     private val feedbackEmail: String
 ) {
     companion object {
         private val TAG_RATING = this::class.java.simpleName
     }
 
+    private val sharPref = SharePreferencesManager(appContext)
     private lateinit var reviewString: String
     private lateinit var yesString: String
     private lateinit var noString: String
