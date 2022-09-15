@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="review_email_subject" translatable="false">Review Feedback</string>
+    <string name="review">Review</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="later">Later</string>
+    <string name="cancel">Cancel</string>
+    <string name="leave_feedback">Leave feedback</string>
+    <string name="do_you_like_app">Do you like our app?</string>
+    <string name="what_do_you_dislike">What do you dislike about the app and how can we improve it?</string>
+    <string name="would_you_like_to_rate">Would you like to rate us?</string>
+</resources>

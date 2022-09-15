@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ReviewDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <!-- Base colors -->
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+        <item name="android:background">@drawable/bg_alert_dialog</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/ReviewDialogPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ReviewDialogNegativeButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/ReviewDialogNeutralButton</item>
+    </style>
+
+    <style name="ReviewDialogButton" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorBlueSemiTransparent</item>
+    </style>
+
+    <style name="ReviewDialogPositiveButton" parent="ReviewDialogButton">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="ReviewDialogNegativeButton" parent="ReviewDialogButton"/>
+    <style name="ReviewDialogNeutralButton" parent="ReviewDialogButton"/>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LAMPA/in-app-review-lib/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/LAMPA/in-app-review-lib/app/src/main/res/layout/content_main.xml" value="0.17395833333333333" />
+        <entry key="..\:/LAMPA/in-app-review-lib/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="true" project-jdk-name="12" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

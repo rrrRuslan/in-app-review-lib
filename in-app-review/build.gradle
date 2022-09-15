@@ -1,0 +1,88 @@
+//plugins {
+//    id 'com.android.library'
+//    id 'org.jetbrains.kotlin.android'
+//    id 'maven-publish'
+//}
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'maven-publish'
+
+//repositories {
+//    jcenter()
+//    maven { url "https://jitpack.io" }
+//    mavenCentral()
+//    google()
+//}
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 31
+
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+//dependencies {
+//
+//    implementation 'androidx.core:core-ktx:1.7.0'
+//    implementation 'androidx.appcompat:appcompat:1.5.0'
+//    implementation 'com.google.android.material:material:1.6.1'
+//    // Rating
+//    api("com.google.android.play:review:2.0.0")
+//    api("com.google.android.play:review-ktx:2.0.0")
+//}
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    // Rating
+    implementation 'com.google.android.play:review:2.0.0'
+    implementation 'com.google.android.play:review-ktx:2.0.0'
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.rrrRuslan'
+                artifactId = 'in-app-review-lib'
+                version = '1.00'
+            }
+        }
+    }
+}
