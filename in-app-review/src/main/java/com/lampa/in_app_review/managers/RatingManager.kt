@@ -10,7 +10,7 @@ import android.util.Log
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.lampa.in_app_review.R
 
-class RatingManager(
+public class RatingManager(
     private val appContext: Context,
     private val sharPref: SharePreferencesManager,
     private val feedbackEmail: String

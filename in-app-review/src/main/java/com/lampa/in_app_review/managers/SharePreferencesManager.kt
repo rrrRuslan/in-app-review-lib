@@ -3,7 +3,7 @@ package com.lampa.in_app_review.managers
 import android.content.Context
 import android.content.SharedPreferences
 
-class SharePreferencesManager(appContext: Context) {
+public class SharePreferencesManager(appContext: Context) {
 
     companion object {
         private const val SHARED_PREFERENCES_NAME = "BaseSharedPreferences"
